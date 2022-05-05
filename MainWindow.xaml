@@ -13,19 +13,7 @@
             </RowDefinition>
             <RowDefinition Height="45"></RowDefinition>
         </Grid.RowDefinitions>
-        <StackPanel x:Name="MainFrame" Grid.Row="1">
-
-        </StackPanel>
-        <StackPanel x:Name="Date" Margin="702,3,4,2" Grid.Row="2" RenderTransformOrigin="0.5,0.5">
-            <StackPanel.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleY="-1"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </StackPanel.RenderTransform>
-            <Label x:Name="Dating" Height="39"/>
-        </StackPanel>
+        <Frame x:Name="MainFrame" Source="Pages/AuthPage.xaml" Grid.Row="1"/>
+        <Button Background="LightGray" Width="85" Height="Auto" Content="Назад" FontSize="10" Margin="10,9,697,5" Padding="4"/>
     </Grid>
 </Window>
